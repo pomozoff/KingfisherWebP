@@ -11,7 +11,7 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/onevcat/Kingfisher.git", from: "7.1.2"),
-        .package(url: "https://github.com/pomozoff/libwebp", from: "1.2.1")
+        .package(url: "https://github.com/pomozoff/libwebp-xcode", from: "1.2.1")
     ],
     targets: [
         .target(
@@ -22,7 +22,7 @@ let package = Package(
         ),
         .target(
             name: "KingfisherWebP-ObjC",
-            dependencies: ["libwebp"]
+            dependencies: ["libwebp-xcode"]
         )
     ]
 )
